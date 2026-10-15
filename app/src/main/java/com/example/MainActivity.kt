@@ -27,8 +27,6 @@ class MainActivity : ComponentActivity() {
                         startDestination = "home",
                         modifier = Modifier.padding(innerPadding)
                     ) {
-                        // All subscription / payment / lock screens REMOVED!
-                        // Direct access to core driver utilities:
                         composable("home") {
                             HomeScreen(
                                 onNavigateToSettings = { navController.navigate("settings") },
