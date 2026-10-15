@@ -35,7 +35,6 @@ fun HomeScreen(
             .padding(16.dp)
             .verticalScroll(rememberScrollState())
     ) {
-        // App Header
         Row(
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceBetween,
@@ -62,7 +61,6 @@ fun HomeScreen(
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        // Open Source Free Badge (Replaced Subscription Expired Banner)
         Card(
             modifier = Modifier.fillMaxWidth(),
             colors = CardDefaults.cardColors(containerColor = Color(0xFF064E3B)),
@@ -97,7 +95,6 @@ fun HomeScreen(
 
         Spacer(modifier = Modifier.height(18.dp))
 
-        // Master Service Switches
         Card(
             modifier = Modifier.fillMaxWidth(),
             colors = CardDefaults.cardColors(containerColor = Color(0xFF1E293B)),
@@ -112,7 +109,6 @@ fun HomeScreen(
                 )
                 Spacer(modifier = Modifier.height(12.dp))
 
-                // Auto Accept Toggle
                 Row(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceBetween,
@@ -134,7 +130,6 @@ fun HomeScreen(
 
                 Divider(color = Color(0xFF334155), modifier = Modifier.padding(vertical = 12.dp))
 
-                // Overlay Widget Toggle
                 Row(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceBetween,
@@ -154,7 +149,6 @@ fun HomeScreen(
 
         Spacer(modifier = Modifier.height(18.dp))
 
-        // Quick Navigation Grid
         Text(
             text = "ரைடு வடிகட்டி கருவிகள் (Filter Tools)",
             color = Color(0xFF94A3B8),
