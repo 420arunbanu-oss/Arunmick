@@ -15,14 +15,6 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Auto-extract ZIP if user uploaded zip file directly
-      run: |
-        if compgen -G "*.zip" > /dev/null; then
-          echo "Found ZIP file! Extracting automatically..."
-          unzip -o *.zip
-        fi
-        ls -la
-
     - name: Set up JDK 17
       uses: actions/setup-java@v4
       with:
@@ -46,7 +38,7 @@ jobs:
     - name: Locate and prepare APK
       run: |
         mkdir -p output-apk
-        find . -name "*debug*.apk" -exec cp {} output-apk/SmartDrivo-Free.apk ;
+        find . -name "*debug*.apk" -exec cp {} output-apk/SmartDrivo-Free.apk \;
         ls -la output-apk
 
     - name: Upload APK Artifact
