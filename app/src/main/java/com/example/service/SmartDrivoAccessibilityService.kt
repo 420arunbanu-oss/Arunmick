@@ -21,7 +21,6 @@ class SmartDrivoAccessibilityService : AccessibilityService() {
         val settings = prefsManager.getSettings()
         if (!settings.isAutoAcceptEnabled) return
 
-        // 100% Free Lifetime - Never checks subscription expiry or locks
         val rootNode = rootInActiveWindow ?: return
 
         when {
@@ -38,7 +37,6 @@ class SmartDrivoAccessibilityService : AccessibilityService() {
     }
 
     private fun handleRapidoOffer(root: AccessibilityNodeInfo, settings: com.example.model.AppSettings) {
-        // Search for accept button
         val acceptButtons = root.findAccessibilityNodeInfosByText("Accept")
             .ifEmpty { root.findAccessibilityNodeInfosByText("ஏற்றுக்கொள்") }
 
