@@ -48,7 +48,6 @@ fun SettingsScreen(onBack: () -> Unit) {
                 .padding(16.dp)
                 .verticalScroll(rememberScrollState())
         ) {
-            // Price Controls
             Card(
                 modifier = Modifier.fillMaxWidth(),
                 colors = CardDefaults.cardColors(containerColor = Color(0xFF1E293B)),
@@ -85,7 +84,6 @@ fun SettingsScreen(onBack: () -> Unit) {
 
             Spacer(modifier = Modifier.height(18.dp))
 
-            // Platform Toggles
             Card(
                 modifier = Modifier.fillMaxWidth(),
                 colors = CardDefaults.cardColors(containerColor = Color(0xFF1E293B)),
