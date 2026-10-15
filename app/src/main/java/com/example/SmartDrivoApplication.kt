@@ -11,6 +11,5 @@ class SmartDrivoApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         preferencesManager = PreferencesManager(this)
-        // All tamper check listeners and payment status checkers removed!
     }
 }
