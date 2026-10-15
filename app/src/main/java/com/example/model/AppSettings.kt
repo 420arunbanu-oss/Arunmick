@@ -44,13 +44,6 @@ data class AppSettings(
     val isTampered: Boolean = false,
     val isLocked: Boolean = false
 ) {
-    /**
-     * Always returns true. Zero restrictions for any driver worldwide.
-     */
     fun hasActivePlan(): Boolean = true
-
-    /**
-     * Always returns false. No lock screen will ever trigger.
-     */
     fun isPlanExpired(): Boolean = false
 }
